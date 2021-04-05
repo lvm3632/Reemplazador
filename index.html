@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <title>Reemplazador</title>
+  </head>
+  <body>
+    <div class="form__group">
+      <h1 class="title">Reemplazador</h1>
+      <input
+        type="text"
+        class="form__input"
+        id="entrada_original"
+        placeholder="Ejemplo: abaa  aab aaanbbb"
+        required=""
+        size="45"
+      />
+      <label for="name" class="form__label">Entrada original</label>
+      <input
+        type="text"
+        class="form__input"
+        placeholder="Ejemplo: aba*+bbb*"
+        required="true"
+        size="45"
+        id="expresion_regular"
+      />
+      <label for="name" class="form__label">Expresión regular</label>
+      <input
+        type="text"
+        class="form__input"
+        placeholder="Ejemplo: ccc"
+        required=""
+        size="45"
+        id="cadena_reemplazadora"
+      />
+      <label for="name" class="form__label">Cadena a reemplazar</label>
+
+      <textarea
+        readonly
+        class="form__input"
+        name="resultado"
+        cols="80"
+        rows="10"
+        id="resultado_area"
+      >
+      </textarea>
+
+      <button
+        id="generar"
+        class="form__button oprimir"
+        type="submit"
+        value="Submit"
+      >
+        <span class="front"> Generar expresión </span>
+      </button>
+      <button
+        id="limpiar"
+        class="form__button oprimir"
+        type="submit"
+        value="Submit"
+      >
+        <span class="front"> Limpiar </span>
+      </button>
+    </div>
+
+    <script src="reemplazador.js" type="text/javascript"></script>
+    <script src="test.js" type="text/javascript"></script>
+  </body>
+</html>
